@@ -2343,7 +2343,6 @@ class ModelTesterMixin:
     @require_accelerate
     @mark.accelerate_tests
     @require_torch_accelerator
-    @unittest.skip("# TODO @CyrilVallez fix this in the other PR")
     def test_disk_offload_bin(self):
         config, inputs_dict = self.model_tester.prepare_config_and_inputs_for_common()
 
@@ -2388,7 +2387,6 @@ class ModelTesterMixin:
     @require_accelerate
     @mark.accelerate_tests
     @require_torch_accelerator
-    @unittest.skip("# TODO @CyrilVallez fix this in the other PR")
     def test_disk_offload_safetensors(self):
         config, inputs_dict = self.model_tester.prepare_config_and_inputs_for_common()
 
@@ -2427,7 +2425,6 @@ class ModelTesterMixin:
     @require_accelerate
     @mark.accelerate_tests
     @require_torch_accelerator
-    @unittest.skip("# TODO @CyrilVallez fix this in the other PR")
     def test_cpu_offload(self):
         config, inputs_dict = self.model_tester.prepare_config_and_inputs_for_common()
 
